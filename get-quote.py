@@ -1,11 +1,16 @@
-def primary():
-   print("Keep it logically awesome.")
+import random
+def main():
+  # print("Keep it logically awesome.")
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
 
-  #print(quotes)
+  last = 13
+  rnd = random.randint(0, last)
+  last = len(quotes) - 1
+  print(quotes[rnd])
+  #print(quotes[13])
 
-if __name__== "__primary__":
-  primary()
+if __name__== "__main__":
+  main()
